@@ -45,7 +45,7 @@ spec:
   - name: http
     port: 8080
     targetPort: 8080
-    protocal: TCP
+    protocol: TCP
   type: LoadBalancer
   selector:
     app: echoserver
