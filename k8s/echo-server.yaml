@@ -42,7 +42,9 @@ metadata:
     service.beta.kubernetes.io/aws-load-balancer-internal: "true"
 spec:
   ports:
-  - port: 8080
+  - name: http
+    port: 8080
+    targetPort: 8080
     protocal: TCP
   type: LoadBalancer
   selector:
